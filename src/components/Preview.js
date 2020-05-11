@@ -7,11 +7,11 @@ function Preview() {
     return (
         <BrowserRouter>
             <Switch>
+                <Route path="/banner-large" exact={true}>
+                    <BannerLarge/>
+                </Route>
                 <Route path="/">
                     <Homepage/>
-                </Route>
-                <Route path="/banner-large">
-                    <BannerLarge/>
                 </Route>
             </Switch>
         </BrowserRouter>
