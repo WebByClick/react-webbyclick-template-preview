@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter, Switch, Route} from "react-router-dom";
 import {Homepage} from "./Homepage";
 
-function App() {
+function Preview() {
     return (
         <BrowserRouter>
             <Switch>
@@ -14,4 +14,4 @@ function App() {
     );
 }
 
-export default App;
+export default Preview;
