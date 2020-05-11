@@ -3,6 +3,49 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _reactRouterDom = require("react-router-dom");
+
+var _Homepage = require("./Homepage");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+function App() {
+  return /*#__PURE__*/_react["default"].createElement(_reactRouterDom.BrowserRouter, null, /*#__PURE__*/_react["default"].createElement(_reactRouterDom.Switch, null, /*#__PURE__*/_react["default"].createElement(_reactRouterDom.Route, {
+    path: "/"
+  }, /*#__PURE__*/_react["default"].createElement(_Homepage.Homepage, null))));
+}
+
+var _default = App;
+exports["default"] = _default;
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Footer = Footer;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+function Footer(props) {
+  return /*#__PURE__*/_react["default"].createElement("footer", null, /*#__PURE__*/_react["default"].createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/_react["default"].createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/_react["default"].createElement("div", {
+    className: "col-md-60"
+  }, /*#__PURE__*/_react["default"].createElement("p", null, "This preview is used as a developer preview for WebByClick templates.")))));
+}
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 exports.Homepage = Homepage;
 
 var _react = _interopRequireDefault(require("react"));
