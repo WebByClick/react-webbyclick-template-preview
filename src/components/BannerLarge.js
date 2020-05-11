@@ -1,7 +1,7 @@
 import React from 'react';
 import {Footer} from "./Footer";
 
-export function Homepage( props ) {
+export function BannerLarge( props ) {
     return (
         <div className="wrap">
 
