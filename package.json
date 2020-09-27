@@ -1,11 +1,13 @@
 {
   "name": "@webbyclick/react-webbyclick-template-preview",
-  "version": "0.2.3",
+  "version": "0.2.5",
   "description": "React preview for template management of WebByClick.",
   "main": "./src/components/Preview.js",
+  "main": "build/index.js",
   "license": "MIT",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "prepublish": "rm -rf ./lib && npm run build"
   },
   "repository": {
     "type": "git",
