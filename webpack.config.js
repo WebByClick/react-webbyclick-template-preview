@@ -2,30 +2,19 @@ var path = require('path');
 
 module.exports = {
     mode: 'production',
-    entry: './src/components/Preview.js',
+    entry: './src/components/ReactWebbyclickTemplatePreview.js',
     output: {
         path: path.join(__dirname, './lib'),
-        filename: 'myUnflappableComponent.js',
-
-        publicPath: '/dist/',
-        umdNamedDefine: true
-        // path: path.resolve('lib'),
-        // // filename: 'Preview.js',
-        // libraryTarget: 'commonjs2'
+        filename: 'ReactWebbyclickTemplatePreview.js',
+        libraryTarget: 'commonjs2'
     },
 
     module: {
         rules: [
             {
                 test: /\.(js|jsx)$/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['@babel/env']
-                    }
-                }
-                include: path.resolve(__dirname, "src"),
-                exclude: /node_modules/
+                use: 'babel-loader',
+                exclude: /(node_modules)/,
             }
         ]
     },

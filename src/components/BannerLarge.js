@@ -4,7 +4,6 @@ import {Footer} from "./Footer";
 export function BannerLarge( props ) {
     return (
         <div className="wrap">
-
             <div id="grid-content" className="content">
                 <div id="section1" className="grid-section grid-section-bright">
                     <div className="container grid-container">

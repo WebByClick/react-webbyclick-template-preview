@@ -1,54 +1,32 @@
 import React, {useState} from 'react';
-import {Footer} from "../Footer";
 import {properties} from "./properties";
-
-export default function Elements( props ) {
-    const elements = Object.keys( properties );
+import {Element} from "./Element";
 
 
+export function Elements( props ) {
     return (
-        <div className="wrap">
-
-            <div id="grid-content" className="content">
-                <div id="main" className="grid-section grid-section-bright">
-                    <div className="container grid-container">
-                        <div className="row grid-row">
-                            <div className="col-md-60 grid-cell grid-cell-content">
-                                <div className="grid-component">
-                                    <div className="grid-content grid-heading editable-content"
-                                         data-grid-content="heading">
-                                        <h1 className=" grid-align-left">Lorem Ipsum</h1>
-                                    </div>
+        <div id="grid-content" className="content">
+            <div className="grid-section grid-section-bright">
+                <div className="container grid-container">
+                    <div className="row grid-row">
+                        <div className="col-md-60 col-xs-60 grid-cell">
+                            <div className="grid-component">
+                                <div className="grid-content grid-heading editable-content">
+                                    <h1>Elements</h1>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
-
-                {
-                    elements.map( ( element, i ) => {
-
-                        return (
-                            <div id={element} key={element} className="grid-section grid-section-bright">
-                                <div className="container grid-container">
-                                    <div className="row grid-row">
-                                        <div className="col-md-60 grid-cell grid-cell-content">
-                                            <div className="grid-component">
-                                                <div className="grid-content grid-heading editable-content"
-                                                     data-grid-content="heading">
-                                                    <h2 className=" grid-align-left">{element}</h2>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        )
-                    } )
-                }
-
-                <Footer/>
             </div>
+
+
+            {
+                Object.keys(properties).map((element, i) => (
+                    <Element name={element} element={properties[element]}/>
+                ))
+            }
         </div>
     )
 }

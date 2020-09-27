@@ -1,11 +1,12 @@
 import React from 'react';
 import {BrowserRouter, Switch, Route} from "react-router-dom";
 
-import {Homepage} from "./Homepage";
 import {BannerLarge} from "./BannerLarge";
-import Elements from "./Elements/Elements";
+import {Elements} from "./Elements/Elements";
+import {Homepage} from "./Homepage";
 
-function Preview() {
+
+function ReactWebbyclickTemplatePreview() {
     return (
         <BrowserRouter>
             <Switch>
@@ -23,4 +24,4 @@ function Preview() {
     );
 }
 
-export default Preview;
+export default ReactWebbyclickTemplatePreview;

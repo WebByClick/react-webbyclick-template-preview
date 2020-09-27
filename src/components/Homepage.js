@@ -359,8 +359,6 @@ export function Homepage( props ) {
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
 

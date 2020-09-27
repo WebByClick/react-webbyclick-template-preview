@@ -1,9 +1,8 @@
 {
   "name": "@webbyclick/react-webbyclick-template-preview",
-  "version": "0.2.5",
+  "version": "0.3.0",
   "description": "React preview for template management of WebByClick.",
-  "main": "./src/components/Preview.js",
-  "main": "build/index.js",
+  "main": "lib/ReactWebbyclickTemplatePreview.js",
   "license": "MIT",
   "scripts": {
     "build": "webpack",
@@ -26,7 +25,6 @@
   ],
   "peerDependencies": {
     "react": "^16.6.1",
-    "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2"
   },
   "devDependencies": {
@@ -37,7 +35,6 @@
     "babel-preset-stage-0": "^6.24.1",
     "path": "^0.12.7",
     "react": "^16.6.1",
-    "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
     "webpack": "^4.5.0",
     "webpack-cli": "^3.2.1"

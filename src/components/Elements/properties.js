@@ -1,24 +1,16 @@
 export const properties = {
     Button:     {
         size: 15,
+        align: true,
         properties: {
-            align:   ['grid-align-left', 'grid-align-center', 'grid-align-right'],
             large:   ['btn-lg', 'btn-sm'],
             round:   ['btn-br-lg', 'btn-br-sm'],
             inverse: ['btn-inv', 'btn-col']
-        }
+        },
     },
     Email:      {
         size: 60,
         properties: {
-            // name_enabled:      [],
-            // surname_enabled:   [],
-            // telephone_enabled: [],
-            // email_enabled:     [],
-            // round_corners:     [],
-            // heading:           [],
-            // success:           [],
-            // error:             [],
             large:             ['email-lg', 'email-sm'],
             inverse:           ['email-inv', 'email-col'],
             round:             ['email-br-lg', 'email-br-sm']
@@ -48,9 +40,8 @@ export const properties = {
     },
     Image:      {
         size: 60,
-        properties: {
-            align:   ['grid-align-left', 'grid-align-center', 'grid-align-right']
-        }
+        align: true,
+        properties: {}
     },
 
     Video:     {
@@ -67,8 +58,9 @@ export const properties = {
     },
     Pictogram: {
         size: 10,
+        align: true,
+
         properties: {
-            align:   ['grid-align-left', 'grid-align-center', 'grid-align-right'],
             large:   ['icon-lg', 'icon-sm'],
             round:   ['icon-br-lg', 'icon-br-sm'],
             inverse: ['icon-inv', 'icon-col']
@@ -84,9 +76,9 @@ export const properties = {
     },
     Social:    {
         size: 15,
+        align: true,
         properties: {
             orientation: ['social-horizontal', 'social-vertical'],
-            align:       ['grid-align-left', 'grid-align-center', 'grid-align-right'],
             large:       ['social-lg', 'social-sm'],
             background:  [],
             inverse:     ['social-inv', 'social-col'],
