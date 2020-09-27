@@ -5,7 +5,7 @@ module.exports = {
     entry: './src/components/Preview.js',
     output: {
         path: path.resolve('lib'),
-        filename: 'Preview.js',
+        // filename: 'Preview.js',
         libraryTarget: 'commonjs2'
     },
     module: {
