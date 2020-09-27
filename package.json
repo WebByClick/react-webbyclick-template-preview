@@ -1,6 +1,6 @@
 {
   "name": "@webbyclick/react-webbyclick-template-preview",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "React preview for template management of WebByClick.",
   "main": "./src/components/Preview.js",
   "license": "MIT",
