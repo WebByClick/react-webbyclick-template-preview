@@ -1,19 +1,17 @@
 {
   "name": "@webbyclick/react-webbyclick-template-preview",
-  "version": "0.1.5",
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "version": "0.2.0",
+  "description": "React preview for template management of WebByClick.",
+  "main": "./src/components/Preview.js",
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "react-scripts start",
-    "build": "babel src --out-file index.js",
-    "publish:npm": "rm -rf dist && mkdir dist && babel src/components -d dist --copy-files"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/WebByClick/react-webbyclick-template-preview.git"
   },
   "author": "slavokozar",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/WebByClick/react-webbyclick-template-preview/issues"
   },
@@ -30,13 +28,14 @@
     "react-router-dom": "^5.1.2"
   },
   "devDependencies": {
-    "@babel/cli": "^7.1.5",
-    "@babel/core": "^7.1.6",
-    "@babel/preset-env": "^7.1.6",
-    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^6.21.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "path": "^0.12.7",
     "react": "^16.6.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2"
-  },
-  "dependencies": {}
+  }
 }
